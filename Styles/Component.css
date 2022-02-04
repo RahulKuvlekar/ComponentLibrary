@@ -1,0 +1,27 @@
+/* CSS files of components */
+@import url("/components/alert/alert.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --default-color: #171717;
+  --primary-color: #6366f1;
+  --secondary-color: #f3f4f6;
+  --danger-color: #f44336;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+
+  --primary-hover: #4f46e5;
+  --secondary-hover: #e5e7eb;
+  --danger-hover: #d31609;
+  --success-hover: #0d8611;
+  --active-hover: #058ce0;
+
+  --off-white: #f6f9fc;
+  --active-color: #1ea7fd;
+}
