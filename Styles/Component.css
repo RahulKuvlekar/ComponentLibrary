@@ -1,5 +1,6 @@
 /* CSS files of components */
-@import url("/components/alert/alert.css");
+@import url("../Components/alert/alert.css");
+@import url("../Components/Button/button.css");
 
 * {
   margin: 0;
@@ -19,7 +20,8 @@
   --primary-hover: #4f46e5;
   --secondary-hover: #e5e7eb;
   --danger-hover: #d31609;
-  --success-hover: #0d8611;
+  --success-hover: #11a016;
+  --warning-hover: #ff9800;
   --active-hover: #058ce0;
 
   --off-white: #f6f9fc;
