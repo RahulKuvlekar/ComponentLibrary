@@ -17,11 +17,12 @@
   --success-color: #4caf50;
   --warning-color: #ff9800;
 
+  --default-hover: #222222;
   --primary-hover: #4f46e5;
   --secondary-hover: #e5e7eb;
   --danger-hover: #d31609;
   --success-hover: #11a016;
-  --warning-hover: #ff9800;
+  --warning-hover: #ec930e;
   --active-hover: #058ce0;
 
   --off-white: #f6f9fc;
