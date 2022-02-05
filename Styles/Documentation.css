@@ -104,12 +104,12 @@ body {
 }
 .content-title-md {
   font-size: 1.6rem;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem;
 }
 .content-definition-md {
   font-size: 1.3rem;
   margin: 0 0 0.6rem;
-  padding: 0 0.6rem;
+  padding: 0 1rem;
   color: rgb(56, 56, 56);
 }
 .content-definition p {
@@ -121,6 +121,10 @@ body {
 
 .content-example-box {
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   border-radius: 0.6rem;
   background-color: #f5f5f5;
