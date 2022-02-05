@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li class="active">
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href=""> Avatar </a>
+            </li>
+            <li>
+              <a href=""> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li>
+              <a href=""> Card </a>
+            </li>
+            <li>
+              <a href=""> Image </a>
+            </li>
+            <li>
+              <a href=""> Input </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-section grid-item">
+        <h1 class="content-title-lg">Alert</h1>
+        <hr />
+        <div class="content-definition-lg">
+          An alert displays a short, important message in a way that attracts
+          the user's attention without interrupting the user's task.
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Simple Alert</h1>
+        <div class="content-definition-md">
+          Simple Alerts can be created using alert-box class, followed by the
+          variant name.
+        </div>
+        <div class="content-example-box">
+          <div class="alert-box">
+            <strong>Default</strong>
+            This is the Default alert !!!
+          </div>
+          <div class="alert-box alert-primary">
+            <strong>Primary</strong>
+            This is the primary alert !!!
+          </div>
+          <div class="alert-box alert-secondary">
+            <strong>Secondary</strong>
+            This is the Secondary alert !!!
+          </div>
+          <div class="alert-box alert-success">
+            <strong>Success</strong>
+            This is the success alert !!!
+          </div>
+          <div class="alert-box alert-warning">
+            <strong>Warning</strong>
+            This is the warning alert !!!
+          </div>
+          <div class="alert-box alert-danger">
+            <strong>Danger</strong>
+            This is the danger alert !!!
+          </div>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520using%2520the%2520alert%2520class%2520followed%2520by%2520the%2520alert-variant%2520name%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EDefault%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520Default%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EPrimary%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520primary%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecondary%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520Secondary%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520success%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520warning%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EDanger%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520danger%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 688px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+        <h1 class="content-title-md">Outline Alert</h1>
+        <div class="content-definition-md">
+          Outline alerts are created by using alert class, followed by
+          alert-outline-variant.
+        </div>
+        <div class="content-example-box">
+          <div class="alert-box alert-outline-primary">
+            <strong>Primary</strong>
+            This is the primary alert !!!
+          </div>
+          <div class="alert-box alert-outline-secondary">
+            <strong>Secondary</strong>
+            This is the Secondary alert !!!
+          </div>
+          <div class="alert-box alert-outline-success">
+            <strong>Success</strong>
+            This is the success alert !!!
+          </div>
+          <div class="alert-box alert-outline-warning">
+            <strong>Warning</strong>
+            This is the warning alert !!!
+          </div>
+          <div class="alert-box alert-outline-danger">
+            <strong>Danger</strong>
+            This is the danger alert !!!
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520using%2520the%2520alert%2520class%2520followed%2520by%2520the%2520alert-outline-%28variant%2520name%29%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-outline-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EPrimary%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520primary%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-outline-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecondary%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520Secondary%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-outline-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520success%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-outline-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520warning%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-outline-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cstrong%253EDanger%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520the%2520danger%2520alert%2520%21%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 589px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
