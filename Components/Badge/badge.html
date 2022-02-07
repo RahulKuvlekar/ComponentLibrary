@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href="../Avatar/avatar.html"> Avatar </a>
+            </li>
+            <li class="active">
+              <a href="../Badge/badge.html"> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li>
+              <a href=""> Card </a>
+            </li>
+            <li>
+              <a href=""> Image </a>
+            </li>
+            <li>
+              <a href=""> Input </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-section grid-item">
+        <h1 class="content-title-lg">Badge</h1>
+        <hr />
+        <div class="content-definition-lg">
+          Badges are small circles, positioned either at top-right or
+          bottom-right of the parent component. Badges are being used to display
+          a notification count or status information
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Profile Badge</h1>
+        <div class="content-definition-md">
+          Status badges can be used to denote the status of a user. For example,
+          it can show if the user is Online, Offline, Idle and dnd mode.
+        </div>
+        <div class="content-example-box">
+          <div class="badge-container">
+            <img
+              class="avatar avatar-xlg"
+              src="/Assets/Images/avatar-6.png"
+              alt="avatar"
+            />
+            <span class="badge-status badge-status-online"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar avatar-lg"
+              src="/Assets/Images/avatar-7.png"
+              alt="avatar"
+            />
+            <span class="badge-status badge-status-dnd"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar avatar-md"
+              src="/Assets/Images/avatar-6.png"
+              alt="avatar"
+            />
+            <span class="badge-status badge-status-idle"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar avatar-sm"
+              src="/Assets/Images/avatar-7.png"
+              alt="avatar"
+            />
+            <span class="badge-status badge-status-offline"></span>
+          </div>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=809&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Using%2520the%2520%27badge-container%27%2520class%2520on%2520parent%2520and%2520%27badge-status%27%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2526%2520%27badge-status-variant%27%2520class%2520on%2520child%2520%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520avatar-xlg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-6.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520avatar-lg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-7.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-dnd%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520avatar-md%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-6.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-idle%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520avatar-sm%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-7.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 848px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+        <h1 class="content-title-md">Number Badge</h1>
+        <div class="content-definition-md">
+          Number badges can be used to denote the numeric value of an entity i.e
+          to show the no. of items present in the parent component.
+        </div>
+        <div class="content-example-box">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge-icon badge-icon-red">10</span>
+          </div>
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge-icon badge-icon-yellow">20</span>
+          </div>
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge-icon badge-icon-green">30</span>
+          </div>
+          <div class="badge-container">
+            <i class="fas fa-bell fa-3x"></i>
+            <span class="badge-icon badge-icon-lg">007</span>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=772&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27badge-container%27%2520class%2520on%2520parent%2520and%2520%27badge-icon%27%2520%2526%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%27badeg-icon-variant%27%2520class%2520on%2520child%2520%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-icon-red%2522%253E10%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-icon-yellow%2522%253E20%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-icon-green%2522%253E30%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2522%253E007%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 509px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
