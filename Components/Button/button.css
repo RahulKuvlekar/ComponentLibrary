@@ -74,6 +74,7 @@
 
 .btn-outline:hover {
   background-color: var(--default-color);
+  border: 1px solid var(--default-color);
   color: white;
 }
 
@@ -86,6 +87,7 @@
 
 .btn-outline-primary:hover {
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: white;
 }
 
@@ -97,6 +99,7 @@
 
 .btn-outline-warning:hover {
   background-color: var(--warning-hover);
+  border: 1px solid var(--warning-color);
   color: white;
 }
 
@@ -108,6 +111,7 @@
 
 .btn-outline-success:hover {
   background-color: var(--success-color);
+  border: 1px solid var(--success-color);
   color: white;
 }
 
@@ -119,6 +123,7 @@
 
 .btn-outline-danger:hover {
   background-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
   color: white;
 }
 
@@ -127,20 +132,28 @@
   font-weight: 600;
   padding: 0.5rem 0.2rem;
   margin: 0.5rem;
-  border-bottom: 2px solid var(--default-color);
+  text-decoration: underline;
+  color: var(--default-hover);
+  text-decoration-color: var(--default-hover);
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
 }
 .btn-link:hover {
-  color: (--default-hover);
-  border-bottom: 3px solid var(--default-hover);
+  color: var(--default-color);
+  text-decoration-color: var(--default-color);
+  text-decoration-thickness: 3px;
 }
 
 /* Link Button Variants */
 .link-primary {
-  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
 }
 .link-primary:hover {
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-hover);
+  color: var(--primary-hover);
+  text-decoration-color: var(--primary-hover);
+  text-decoration-thickness: 3px;
 }
 
 /* Icon Button */
