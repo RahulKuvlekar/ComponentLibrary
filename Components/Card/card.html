@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href="../Avatar/avatar.html"> Avatar </a>
+            </li>
+            <li>
+              <a href="../Badge/badge.html"> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li class="active">
+              <a href="../Card/card.html"> Card </a>
+            </li>
+            <li>
+              <a href=""> Image </a>
+            </li>
+            <li>
+              <a href=""> Input </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-section grid-item">
+        <h1 class="content-title-lg">Card</h1>
+        <hr />
+        <div class="content-definition-lg">
+          Card are used to show user related data collectively, like product
+          details.
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Basic Card</h1>
+        <div class="content-definition-md">
+          This is a basic card which showcases the product image, title,
+          subtitle, price, discount price and action buttons.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs. 007 </span>
+                <span class="price-before"> Rs. 0077 </span>
+                <span class="price-discount"> (07% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-container%27%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Image%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Headings%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Price%2520Section%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.%2520007%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25200077%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2807%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 529px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Card with Badge</h1>
+        <div class="content-definition-md">
+          This is a basic card which which contains a badge. Badges are used to
+          highlight specific information to catch the user's attention. They can
+          appear to top-left corner of the card.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-badge card-badge-danger">Trending</div>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-container%27%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Image%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Badge%2520%28Optional%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-badge-danger%2522%253ETrending%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Headings%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Price%2520Section%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.%2520007%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25200077%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2807%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 569px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Card with dismiss</h1>
+        <div class="content-definition-md">
+          This is a basic card which which contains a dismiss icon. The icon can
+          be found on the top-right corner and can be used to close the card.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-container%27%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Image%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Dismiss%2520%28Optional%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Headings%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Price%2520Section%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.%2520123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 608px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Card with Text Overlay</h1>
+        <div class="content-definition-md">
+          This is a basic card with text overlay. Text Overlay is used to
+          display text on top of a card/element.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container">
+            <div class="card-overlay">
+              <div class="card-overlay-content">
+                <h1>Out Of Stock</h1>
+              </div>
+              <img
+                class="card-img"
+                src="https://picsum.photos/500/500"
+                alt=""
+              />
+              <button class="card-btn-dismiss">
+                <i class="btn-icon fa-solid fa-x"></i>
+              </button>
+              <div class="card-content">
+                <h3 class="card-title">Title</h3>
+                <p class="card-text">Subtitle | Small Description.</p>
+                <div class="card-price">
+                  <span class="price-now"> Rs.123 </span>
+                  <span class="price-before"> Rs. 1234 </span>
+                  <span class="price-discount"> (12% OFF) </span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-primary">Add to cart</button>
+                  <button class="btn btn-outline-primary">
+                    Add to wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-container%27%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-overlay%27%2520as%2520a%2520wrapper%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%27card-overlay-content%27%2520to%2520display%2520message%2520on%2520overlay%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EOut%2520Of%2520Stock%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 628px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Text only Card</h1>
+        <div class="content-definition-md">
+          This is a basic card which has only text.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container">
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-body-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Obcaecati ducimus eum rerum possimus illo voluptates libero
+                laborum accusantium dolorum repellendus labore quis placeat
+                molestiae enim doloribus reprehenderit, vitae suscipit repellat.
+              </p>
+
+              <div class="btn-container">
+                <button class="btn btn-primary">Confirm</button>
+                <button class="btn btn-outline-primary">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-container%27%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Content%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Headings%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Body%2520%28use%2520card-body-text%2520class%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Obcaecati%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ducimus%2520eum%2520rerum%2520possimus%2520illo%2520voluptates%2520libero%2520laborum%2520accusantium%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dolorum%2520repellendus%2520labore%2520quis%2520placeat%2520molestiae%2520enim%2520doloribus%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520reprehenderit%252C%2520vitae%2520suscipit%2520repellat.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EConfirm%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 489px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Horizontal Card</h1>
+        <div class="content-definition-md">A basic horizontal card</div>
+        <div class="content-example-box">
+          <div class="card-container card-horizontal">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-badge card-badge-danger">Trending</div>
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-horizontal%27%2520followed%2520by%2520card%2520container%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Image%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Badge%2520%28Optional%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-badge-danger%2522%253ETrending%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Dismiss%2520%28Optional%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Headings%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Price%2520Section%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.%2520123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 648px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Card with Shadow</h1>
+        <div class="content-definition-md">
+          A basic horizontal card with box shadow. There are 3 types of shadow
+          card light, medium, dark.
+        </div>
+        <div class="content-example-box">
+          <div class="card-container card-shadow-lt">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-badge card-badge-danger">Trending</div>
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container card-shadow-md">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-badge card-badge-danger">Trending</div>
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container card-shadow-dk">
+            <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+            <div class="card-badge card-badge-danger">Trending</div>
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Three%2520type%2520of%2520card-shadow-lt%2520%257C%2520card-shadow-md%2520%257C%2520card-shadow-dk%2520--%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-shadow-lt%27%2520followed%2520by%2520%2522card%2520container%2522%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-shadow-lt%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-badge-danger%2522%253ETrending%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+            style="
+              width: 100%;
+              height: 400px;
+              border: 0;
+              transform: scale(1);
+              overflow: scroll;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Three%2520type%2520of%2520card-shadow-lt%2520%257C%2520card-shadow-md%2520%257C%2520card-shadow-dk%2520--%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-shadow-md%27%2520followed%2520by%2520%2522card%2520container%2522%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-shadow-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-badge-danger%2522%253ETrending%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+            style="
+              width: 100%;
+              height: 400px;
+              border: 0;
+              transform: scale(1);
+              overflow: scroll;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Three%2520type%2520of%2520card-shadow-lt%2520%257C%2520card-shadow-md%2520%257C%2520card-shadow-dk%2520--%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Using%2520the%2520%27card-shadow-dk%27%2520followed%2520by%2520%2522card%2520container%2522%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-shadow-dk%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-badge-danger%2522%253ETrending%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522btn-icon%2520fa-solid%2520fa-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESubtitle%2520%257C%2520Small%2520Description.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-now%2522%253E%2520Rs.123%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-before%2522%253E%2520Rs.%25201234%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-discount%2522%253E%2520%2812%2525%2520OFF%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EAdd%2520to%2520wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 400px;
+              border: 0;
+              transform: scale(1);
+              overflow: scroll;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
