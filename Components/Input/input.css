@@ -1,0 +1,50 @@
+.input-group {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  color: #333;
+  line-height: 20px;
+  margin: 0 auto 1rem;
+}
+.input-group input {
+  font-size: 1rem;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 0.6rem 0.7rem;
+  outline: none;
+  margin: 0.25rem 0;
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.input-group input:focus {
+  outline: 2px solid var(--primary-color);
+}
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  width: 100%;
+}
+
+.input-group.input-error input {
+  border: 2px solid var(--danger-color);
+}
+.input-error .input-error-message {
+  font-weight: 600;
+  color: var(--danger-color);
+}
+
+.input-group.input-success input {
+  border: 2px solid var(--success-color);
+}
+.input-success .input-success-message {
+  font-weight: 600;
+  color: var(--success-color);
+}
+.input-group.input-warning input {
+  border: 2px solid var(--warning-color);
+}
+.input-warning .input-warning-message {
+  font-weight: 600;
+  color: var(--warning-color);
+}
