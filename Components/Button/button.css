@@ -1,0 +1,197 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--default-color);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* color: white; */
+}
+.btn:hover {
+  background-color: #242323;
+}
+.btn:active {
+  border: none;
+  color: white;
+  box-shadow: none;
+}
+
+/* Button Variants */
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  color: var(--default-color);
+  background-color: var(--secondary-color);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+.btn-secondary:active {
+  color: var(--default-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+}
+.btn-warning:hover {
+  background-color: var(--warning-hover);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+}
+
+.btn-success:hover {
+  background-color: var(--success-hover);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+}
+
+/* Outline Button  */
+.btn-outline {
+  background-color: white;
+  border: 1px solid var(--default-color);
+  color: var(--default-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--default-color);
+  border: 1px solid var(--default-color);
+  color: white;
+}
+
+/* Outline Button Variants */
+.btn-outline-primary {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: white;
+}
+
+.btn-outline-warning {
+  background-color: white;
+  border: 1px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--warning-hover);
+  border: 1px solid var(--warning-color);
+  color: white;
+}
+
+.btn-outline-success {
+  background-color: white;
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--success-color);
+  border: 1px solid var(--success-color);
+  color: white;
+}
+
+.btn-outline-danger {
+  background-color: white;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  color: white;
+}
+
+/* Link Button  */
+.btn-link {
+  font-weight: 600;
+  padding: 0.5rem 0.2rem;
+  margin: 0.5rem;
+  text-decoration: underline;
+  color: var(--default-hover);
+  text-decoration-color: var(--default-hover);
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+}
+.btn-link:hover {
+  color: var(--default-color);
+  text-decoration-color: var(--default-color);
+  text-decoration-thickness: 3px;
+}
+
+/* Link Button Variants */
+.link-primary {
+  color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+}
+.link-primary:hover {
+  color: var(--primary-hover);
+  text-decoration-color: var(--primary-hover);
+  text-decoration-thickness: 3px;
+}
+
+/* Icon Button */
+.btn-icon {
+  font-size: 2rem;
+  margin: 0.5rem 0.25rem;
+  cursor: pointer;
+}
+
+/* Icon Button Variants*/
+.btn-icon-primary {
+  color: var(--primary-color);
+}
+.btn-icon-success {
+  color: var(--success-color);
+}
+.btn-icon-warning {
+  color: var(--warning-color);
+}
+.btn-icon-danger {
+  color: var(--danger-color);
+}
+.btn-icon-after {
+  margin-left: 0.4rem;
+}
+.btn-icon-before {
+  margin-right: 0.4rem;
+}
+
+/* Floating Button */
+.btn-floating {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
