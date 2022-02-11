@@ -1,0 +1,167 @@
+/* Card Wrapper class */
+.card-container {
+  position: relative;
+  width: 300px;
+  height: max-content;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+/* Card Image */
+.card-img {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+/* Card Body */
+.card-content {
+  padding: 1rem;
+}
+/* Card Headings */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+.card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #444444;
+  margin-bottom: 0.3rem;
+}
+/* Card Discription Text */
+.card-body-text {
+  color: #444444;
+  margin-bottom: 0.3rem;
+}
+
+/* Card Price Section */
+.card-price {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  /* justify-content: ; */
+}
+.card-price .price-now {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-right: 5px;
+}
+.card-price .price-before {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  padding-right: 5px;
+  color: #888888;
+}
+.card-price .price-discount {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding-right: 5px;
+  color: var(--danger-color);
+}
+
+/* Card Buttons */
+.card-container .btn-container {
+  padding: 0.5rem 0 0 0;
+}
+.card-container .btn-container .btn {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* Card Badges */
+.card-container .card-badge {
+  position: absolute;
+  top: 1.2rem;
+  left: -1px;
+  background-color: var(--default-color);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0 3px 3px 0;
+}
+.card-badge.card-badge-primary {
+  background-color: var(--primary-color);
+}
+.card-badge.card-badge-danger {
+  background-color: var(--danger-color);
+}
+.card-badge.card-badge-success {
+  background-color: var(--success-color);
+}
+.card-badge.card-badge-warning {
+  background-color: var(--warning-color);
+}
+
+/* Card Dismiss Button */
+.card-btn-dismiss {
+  position: absolute;
+  top: 0.6rem;
+  right: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  background-color: transparent;
+  border: none;
+  color: #333333;
+}
+
+.card-btn-dismiss .btn-icon {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.199);
+}
+.card-btn-dismiss .btn-icon:hover {
+  color: #111111;
+}
+
+/* Card Overlay */
+.card-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-overlay * {
+  opacity: 0.65;
+}
+.card-overlay button {
+  pointer-events: none;
+}
+.card-overlay .card-overlay-content {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+.card-overlay .card-overlay-content:hover {
+  opacity: 1;
+}
+.card-overlay .card-overlay-content h1 {
+  opacity: 1;
+  font-size: 2rem;
+}
+
+/* Card Shadows */
+.card-shadow-lt {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-shadow-md {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+.card-shadow-dk {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 28px,
+    rgba(0, 0, 0, 0.32) 0px 10px 10px;
+}
