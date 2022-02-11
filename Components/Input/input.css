@@ -6,6 +6,14 @@
   line-height: 20px;
   margin: 0 auto 1rem;
 }
+
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  width: 100%;
+}
+
 .input-group input {
   font-size: 1rem;
   background: #fff;
@@ -19,12 +27,8 @@
 .input-group input:focus {
   outline: 2px solid var(--primary-color);
 }
-.input-group label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin: 0.25rem 0;
-  width: 100%;
-}
+
+/* Message Variants */
 
 .input-group.input-error input {
   border: 2px solid var(--danger-color);
