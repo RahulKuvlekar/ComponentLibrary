@@ -154,6 +154,20 @@
   font-size: 2rem;
 }
 
+/* Card Horizontal */
+.card-container.card-horizontal {
+  width: 400px;
+  flex-flow: row;
+}
+.card-container.card-horizontal .card-img {
+  width: 180px;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-container.card-horizontal .card-btn-dismiss {
+  top: 0;
+  right: 0;
+}
+
 /* Card Shadows */
 .card-shadow-lt {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
