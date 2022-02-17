@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href="../Avatar/avatar.html"> Avatar </a>
+            </li>
+            <li>
+              <a href="../Badge/badge.html"> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li>
+              <a href="../Card/card.html"> Card </a>
+            </li>
+            <li>
+              <a href="../Image/image.html"> Image </a>
+            </li>
+            <li>
+              <a href="../Input/input.html"> Input </a>
+            </li>
+            <li>
+              <a href="../List/list.html"> List </a>
+            </li>
+            <li>
+              <a href="../Modal/modal.html"> Modal </a>
+            </li>
+            <li>
+              <a href="../Navigation/navigation.html"> Navigation </a>
+            </li>
+            <li>
+              <a href="../Rating/rating.html"> Rating </a>
+            </li>
+            <li>
+              <a href="../Grid/grid.html"> Simplified Grid </a>
+            </li>
+            <li class="active">
+              <a href="../Typography/typography.html"> Typography </a>
+            </li>
+            <li>
+              <a href="../Toast/toast.html"> Toast </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-section grid-item">
+        <h1 class="content-title-lg">Typography</h1>
+        <hr />
+        <div class="content-definition-lg">
+          Typography defines the font size, weight, etc. to be used throughout
+          the project to maintain consistency.
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Headings</h1>
+        <div class="content-definition-md">
+          For heading u can use h1, h2, h3, h4, h5, h6 elements.
+          <br />
+          The same font-styling is present for class names h1, h2, h3, h4, h5,
+          h6 class. You can add one of these classes to style the text.
+        </div>
+        <div class="content-example-box column text-left">
+          <h1>H1-Heading</h1>
+          <hr />
+          <h2>H2-Heading</h2>
+          <hr />
+          <h3>H3-Heading</h3>
+          <hr />
+          <h4>H4-Heading</h4>
+          <hr />
+          <h5>H5-Heading</h5>
+          <hr />
+          <h6>H6-Heading</h6>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520h1%252C%2520h2%252C%2520h3%252C%2520h4%252C%2520h5%252C%2520h6%2520elements--%253E%250A%2520%2520%2520%2520%253Ch1%253EH1-Heading%253C%252Fh1%253E%250A%250A%2520%2520%2520%2520%253Ch2%253EH2-Heading%253C%252Fh2%253E%250A%250A%2520%2520%2520%2520%253Ch3%253EH3-Heading%253C%252Fh3%253E%250A%250A%2520%2520%2520%2520%253Ch4%253EH4-Heading%253C%252Fh4%253E%250A%250A%2520%2520%2520%2520%253Ch5%253EH5-Heading%253C%252Fh5%253E%250A%250A%2520%2520%2520%2520%253Ch6%253EH6-Heading%253C%252Fh6%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520You%2520also%2520use%2520h1%252C%2520h2%252C%2520h3%252C%2520h4%252C%2520h5%252C%2520h6%2520as%2520classes%2520to%2520style%2520the%2520text%2520--%253E%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522h1%2522%253EH1-Heading%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h4%2522%253EH4-Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520"
+            style="
+              width: 100%;
+              height: 429px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Paragraph Text</h1>
+        <div class="content-definition-md">
+          For paragraph u can use p element.
+          <br />
+          Other than this if you want to adjust text to small, medium or large,
+          you can use text-lg, text-md, text-sm class.
+        </div>
+        <div class="content-example-box column text-left">
+          <p>P-Paragraph regular-Text</p>
+          <!-- Style text with class -->
+          <p class="text-lg">P-Paragraph text-large</p>
+          <p class="text-md">P-Paragraph text-medium</p>
+          <p class="text-sm">P-Paragraph text-small</p>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cp%253EP-Paragraph%2520regular-Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%21--%2520using%2520text-lg%252C%2520text-md%252C%2520text-sm%2520class%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-lg%2522%253EP-Paragraph%2520text-large%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-md%2522%253EP-Paragraph%2520text-medium%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-sm%2522%253EP-Paragraph%2520text-small%253C%252Fp%253E%250A%250A"
+            style="
+              width: 100%;
+              height: 269px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Grey Text</h1>
+        <div class="content-definition-md">
+          Grey color fonts are easier on the eyes on a white background.
+          <br />
+          If you want to use different shades of Gray you can use text-grey-lt,
+          text-grey-md, text-grey-lt class.
+        </div>
+
+        <div class="content-example-box column">
+          <h6 class="text-grey-dk">This is Dark grey text</h6>
+          <h6 class="text-grey-md">This is Medium grey text</h6>
+          <h6 class="text-grey-lt">This is Light grey text</h6>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520using%2520text-grey-dk%252C%2520text-grey-md%252C%2520text-grey-lt%2520class%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ch6%2520class%253D%2522text-grey-dk%2522%253EThis%2520is%2520Dark%2520grey%2520text%253C%252Fh6%253E%250A%250A%2520%2520%2520%2520%253Ch6%2520class%253D%2522text-grey-md%2522%253EThis%2520is%2520Medium%2520grey%2520text%253C%252Fh6%253E%250A%250A%2520%2520%2520%2520%253Ch6%2520class%253D%2522text-grey-lt%2522%253EThis%2520is%2520Light%2520grey%2520text%253C%252Fh6%253E%250A"
+            style="
+              width: 100%;
+              height: 230px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Aligned Text</h1>
+        <div class="content-definition-md">
+          It is used to align text to left, center or right on a web page. (Use
+          it in your project to see it in action)
+        </div>
+
+        <div class="content-example-box column text-normal">
+          <div class="text-align-left">This is text-align-left</div>
+          <div class="text-align-center">This is text-align-center</div>
+          <div class="text-align-right">This is text-align-right</div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520using%2520text-align-left%252C%2520text-align-center%252C%2520text-align-right%2520class%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-align-left%2522%253EThis%2520is%2520text-align-left%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-align-center%2522%253EThis%2520is%2520text-align-center%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-align-right%2522%253EThis%2520is%2520text-align-right%253C%252Fdiv%253E%250A%250A"
+            style="
+              width: 100%;
+              height: 250px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
