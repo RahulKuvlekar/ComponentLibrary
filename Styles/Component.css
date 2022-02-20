@@ -1,4 +1,6 @@
 /* CSS files of components */
+@import url("../Components/Typography/typography.css");
+@import url("../Components/List/list.css");
 @import url("../Components/Alert/alert.css");
 @import url("../Components/Avatar/avatar.css");
 @import url("../Components/Button/button.css");
