@@ -133,6 +133,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
+.content-example-box.no-wrap {
+  flex-flow: row nowrap;
+}
 .content-example-box.column {
   flex-flow: column;
 }
@@ -148,7 +151,44 @@ body {
 .content-example-box hr {
   width: 100%;
 }
+.content-example-box .nav-bar {
+  width: 100%;
+  position: relative;
+}
+/* .content-example-box a,
+.content-example-box button {
+  padding: 0.5rem !important;
+} */
+.content-example-box .demo-modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  transform: translate(0, 0) scale(1);
+  z-index: 0;
+}
+.content-example-box.grid-example {
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content-example-box.grid-example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.content-example-box.grid-example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .code-example-box {
   width: 100%;
   margin: 1rem auto;
+}
+.code-example-box img {
+  width: 100%;
+  margin: 1rem auto;
+  height: 50vh;
+  object-fit: contain;
 }

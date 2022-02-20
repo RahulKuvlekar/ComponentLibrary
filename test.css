@@ -1,0 +1,131 @@
+.toast-container {
+  display: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 9999;
+  width: 385px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.toast-container.active {
+  display: block;
+}
+
+.toast-container.top-right {
+  top: 1rem;
+  right: 1rem;
+  animation: toast-in-right 0.7s;
+}
+
+.toast-container.bottom-right {
+  bottom: 1rem;
+  right: 1rem;
+  animation: toast-in-right 0.7s;
+}
+
+.toast-container.top-left {
+  top: 1rem;
+  left: 1rem;
+  animation: toast-in-left 0.7s;
+}
+
+.toast-container.bottom-left {
+  bottom: 1rem;
+  left: 1rem;
+  animation: toast-in-left 0.7s;
+}
+
+.toast {
+  background: var(--default-color);
+  color: white;
+  transition: 0.3s ease;
+  position: relative;
+  pointer-events: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #999;
+  opacity: 0.99;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toast:hover {
+  box-shadow: 0 0 12px #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.toast-body {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.toast-title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.4rem 0;
+  text-align: left;
+}
+
+.toast-logo {
+  margin-right: 15px;
+  font-size: 36px;
+}
+
+.toast .close-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 24px;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.toast .close-btn:active {
+  border: 2px solid black;
+  color: #000;
+}
+
+.toast.bg-primary {
+  background-color: #5bc0de;
+}
+.toast.bg-warning {
+  background-color: #f0ad4e;
+}
+.toast.bg-danger {
+  background-color: #d9534f;
+}
+.toast.bg-success {
+  background-color: #5cb85c;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    translate: translateX(0);
+  }
+}
+
+@keyframes toast-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    translate: translateX(0);
+  }
+}
+@keyframes toast-in-left-back {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    translate: translateX(-100%);
+  }
+}
