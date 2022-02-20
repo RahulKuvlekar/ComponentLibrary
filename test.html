@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+    <!-- <link rel="stylesheet" href="/Styles/Documentation.css" /> -->
+    <script src="/test.js" defer></script>
+    <script src="/Components/Navigation/navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- Brand logo goes here -->
+          <!-- <div class="nav-logo">
+                <a class="link-no-style" href="/index.html">
+                  <img src="https://picsum.photos/100/100" alt="Logo" />
+                </a>
+              </div> -->
+
+          <!-- Brand title goes here -->
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="#"> Title </a>
+          </div>
+
+          <!-- Navigation links goes here -->
+
+          <ul class="nav-pill nav-menu">
+            <li class="list-inline-item">
+              <a href="#" class="link-no-style">Buy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="link-no-style">Rent</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="link-no-style">Sell</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+
+        <div class="nav-section">
+          <label class="search-bar">
+            <span class="search-bar-btn" type="submit"
+              ><i class="fa fa-search"> </i
+            ></span>
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="Type to search"
+              name="search"
+            />
+          </label>
+
+          <!-- section to show button icons and text below it on nav bar -->
+
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="#" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="nav-icon-text"> Profile </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="nav-icon-text"> Wishlist </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <button href="#" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="nav-icon-text"> Cart </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Using class "grid" followed by layout variant "grid-three-col" -->
+    <div class="grid grid-three-col">
+      <!-- Using "grid-item" class -->
+      <div class="grid-item">
+        <!-- column body -->
+        <h3>Grid Column 1</h3>
+        <br />
+        <img
+          class="img-responsive"
+          src="https://picsum.photos/500/500"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <!-- Using "grid-item" class -->
+      <div class="grid-item">
+        <!-- column body -->
+        <h3>Grid Column 2</h3>
+        <br />
+        <div class="loremText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic.
+        </div>
+        <br />
+        <button class="btn btn-primary">Explore</button>
+      </div>
+      <!-- Using "grid-item" class -->
+      <div class="grid-item">
+        <!-- column body -->
+        <h3>Grid Column 1</h3>
+        <br />
+        <img
+          class="img-responsive"
+          src="https://picsum.photos/500/500"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <!-- Using "grid-item" class -->
+      <div class="grid-item">
+        <!-- column body -->
+        <h3>Grid Column 2</h3>
+        <br />
+        <div class="loremText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic.
+        </div>
+        <br />
+        <button class="btn btn-primary">Explore</button>
+      </div>
+    </div>
+  </body>
+</html>
