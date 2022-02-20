@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href="../Avatar/avatar.html"> Avatar </a>
+            </li>
+            <li>
+              <a href="../Badge/badge.html"> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li>
+              <a href="../Card/card.html"> Card </a>
+            </li>
+            <li>
+              <a href="../Image/image.html"> Image </a>
+            </li>
+            <li>
+              <a href="../Input/input.html"> Input </a>
+            </li>
+            <li>
+              <a href="../List/list.html"> List </a>
+            </li>
+            <li>
+              <a href="../Modal/modal.html"> Modal </a>
+            </li>
+            <li>
+              <a href="../Navigation/navigation.html"> Navigation </a>
+            </li>
+            <li>
+              <a href="../Rating/rating.html"> Rating </a>
+            </li>
+            <li class="active">
+              <a href="../Grid/grid.html"> Simplified Grid </a>
+            </li>
+            <li>
+              <a href="../Typography/typography.html"> Typography </a>
+            </li>
+            <li>
+              <a href="../Toast/toast.html"> Toast </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-section grid-item">
+        <h1 class="content-title-lg">Grid</h1>
+        <hr />
+        <div class="content-definition-lg">
+          grid is used to display content in the form of multiple columns
+          maintaining a specific ratio.
+          <br />
+          Check below some examples of side by side columns.
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Grid - 2 Column</h1>
+        <div class="content-definition-md">
+          It is a grid made up of two columns having equal width.
+        </div>
+        <div class="content-example-box grid-example">
+          <div class="grid grid-two-col">
+            <div class="grid-item">
+              <h3>Grid Column 1</h3>
+              <br />
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/500/500"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 2</h3>
+              <br />
+              <div class="loremText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                hic.
+              </div>
+              <br />
+              <button class="btn btn-primary">Explore</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Using%2520class%2520%2522grid%2522%2520followed%2520by%2520layout%2520variant%2520%2522grid-two-col%2522%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid%2520grid-two-col%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25201%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25202%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522loremText%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Iste%252C%2520hic.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 608px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+        <h1 class="content-title-md">Grid - 3 Column</h1>
+        <div class="content-definition-md">
+          It is a grid made up of three columns having equal width.
+        </div>
+        <div class="content-example-box grid-example">
+          <div class="grid grid-three-col">
+            <div class="grid-item">
+              <h3>Grid Column 1</h3>
+              <br />
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/500/500"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 2</h3>
+              <br />
+              <div class="loremText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                hic.
+              </div>
+              <br />
+              <button class="btn btn-primary">Explore</button>
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 3</h3>
+              <br />
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/500/500"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520class%2520%2522grid%2522%2520followed%2520by%2520layout%2520variant%2520%2522grid-three-col%2522%2520--%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid%2520grid-three-col%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25201%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25202%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522loremText%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Iste%252C%2520hic.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25203%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 848px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+        <h1 class="content-title-md">Grid - 4 Column</h1>
+        <div class="content-definition-md">
+          It is a grid made up of Four columns having equal width.
+        </div>
+        <div class="content-example-box grid-example">
+          <div class="grid grid-four-col">
+            <div class="grid-item">
+              <h3>Grid Column 1</h3>
+              <br />
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/500/500"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 2</h3>
+              <br />
+              <div class="loremText">
+                <div class="loremText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  hic.
+                </div>
+              </div>
+              <br />
+              <button class="btn btn-primary">Explore</button>
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 3</h3>
+              <br />
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/500/500"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="grid-item">
+              <h3>Grid Column 4</h3>
+              <br />
+              <div class="loremText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                hic.
+              </div>
+              <br />
+              <button class="btn btn-primary">Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Using%2520class%2520%2522grid%2522%2520followed%2520by%2520layout%2520variant%2520%2522grid-three-col%2522%2520--%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid%2520grid-three-col%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25201%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25202%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522loremText%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Iste%252C%2520hic.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25203%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Using%2520%2522grid-item%2522%2520class%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520column%2520body%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EGrid%2520Column%25204%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522loremText%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Iste%252C%2520hic.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EExplore%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 1067px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <br />
+      </section>
+    </div>
+  </body>
+</html>
