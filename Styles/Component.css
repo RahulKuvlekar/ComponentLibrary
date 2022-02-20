@@ -1,4 +1,6 @@
 /* CSS files of components */
+@import url("../Components/Typography/typography.css");
+@import url("../Components/List/list.css");
 @import url("../Components/Alert/alert.css");
 @import url("../Components/Avatar/avatar.css");
 @import url("../Components/Button/button.css");
@@ -6,6 +8,9 @@
 @import url("../Components/Card/card.css");
 @import url("../Components/Image/image.css");
 @import url("../Components/Input/input.css");
+@import url("../Components/Navigation/navigation.css");
+@import url("../Components/Modal/modal.css");
+@import url("../Components/Rating/rating.css");
 @import url("../Components/Toast/toast.css");
 
 * {
