@@ -1,0 +1,32 @@
+/* Grid */
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.grid .grid-item {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+/* 2 column grid */
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 3 column grid */
+
+.grid-three-col {
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* 4 column grid */
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
