@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Styles/Component.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidebar grid-item">
+        <div>
+          <div class="list-topic">
+            <a href="#"> Components </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="../Alert/alert.html"> Alert </a>
+            </li>
+            <li>
+              <a href="../Avatar/avatar.html"> Avatar </a>
+            </li>
+            <li>
+              <a href="../Badge/badge.html"> Badge </a>
+            </li>
+            <li>
+              <a href="../Button/button.html"> Button </a>
+            </li>
+            <li>
+              <a href="../Card/card.html"> Card </a>
+            </li>
+            <li>
+              <a href="../Image/image.html"> Image </a>
+            </li>
+            <li>
+              <a href="../Input/input.html"> Input </a>
+            </li>
+            <li class="active">
+              <a href="../List/list.html"> List </a>
+            </li>
+            <li>
+              <a href="../Modal/modal.html"> Modal </a>
+            </li>
+            <li>
+              <a href="../Navigation/navigation.html"> Navigation </a>
+            </li>
+            <li>
+              <a href="../Rating/rating.html"> Rating </a>
+            </li>
+            <li>
+              <a href="../Grid/grid.html"> Simplified Grid </a>
+            </li>
+            <li>
+              <a href="../Typography/typography.html"> Typography </a>
+            </li>
+            <li>
+              <a href="../Toast/toast.html"> Toast </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-section grid-item">
+        <h1 class="content-title-lg">List</h1>
+        <hr />
+        <div class="content-definition-lg">
+          A list is a container that presents rows of data arranged in a single
+          column. Lists can be used at so many places, navigation bar, stacked
+          notifications, article pages, etc.
+        </div>
+        <hr />
+        <br />
+        <h1 class="content-title-md">Simple List Group</h1>
+        <div class="content-example-box">
+          <ul class="list">
+            <div class="list-title">List Title</div>
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <li>list-item-3</li>
+            <li>list-item-4</li>
+            <li>list-item-5</li>
+          </ul>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Using%2520%27list%27%2520class%2520name%2520%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-title%2522%253EList%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-3%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-4%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-5%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E"
+            style="
+              width: 100%;
+              height: 269px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Nested List Group</h1>
+        <div class="content-example-box">
+          <ul class="list">
+            <div class="list-title">List Title</div>
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <li class="list-collapsable">
+              <div>list-item-3</div>
+              <ul>
+                <li>sub-item-1</li>
+                <li>sub-item-2</li>
+                <li>sub-item-3</li>
+              </ul>
+            </li>
+            <li>list-item-4</li>
+            <li>list-item-5</li>
+          </ul>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Using%2520%27list%27%2520class%2520name%2520and%2520%27list-collapsable%27%2520for%2520creating%2520nested%2520list--%253E%2520%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-title%2522%253EList%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-collapsable%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253Elist-item-3%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Esub-item-1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Esub-item-2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Esub-item-3%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-4%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253Elist-item-5%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E"
+            style="
+              width: 100%;
+              height: 409px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <hr />
+        <br />
+        <h1 class="content-title-md">Stacked List (Notification)</h1>
+        <div class="content-definition-md">
+          Stacked list are generally used to display notifications where each
+          list item is stacked on top of each other.
+        </div>
+
+        <div class="content-example-box">
+          <ul class="list notification-container">
+            <div class="list-title">Notifications</div>
+            <li>
+              <img
+                class="img-circle"
+                src="/Assets/Images/avatar-1.png"
+                alt="avatar"
+              />
+              <span>Your profile is getting noticed</span>
+            </li>
+            <li>
+              <img
+                class="img-circle"
+                src="/Assets/Images/avatar-2.png"
+                alt="avatar"
+              />
+              <span>@ex commented on your post</span>
+            </li>
+            <li>
+              <img
+                class="img-circle"
+                src="/Assets/Images/avatar-3.png"
+                alt="avatar"
+              />
+              <span>@3 people followed you</span>
+            </li>
+            <li>
+              <img
+                class="img-circle"
+                src="/Assets/Images/avatar-4.png"
+                alt="avatar"
+              />
+              <span>@anonymous liked your post</span>
+            </li>
+          </ul>
+        </div>
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Using%2520%27list%27%2520class%2520name%2520followed%2520by%2520%27notification-container%27%2520for%2520Notification%2520Box--%253E%250A%250A%2509%253Cul%2520class%253D%2522list%2520notification-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-title%2522%253ENotifications%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-circle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-1.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EYour%2520profile%2520is%2520getting%2520noticed%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-circle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-2.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2540ex%2520commented%2520on%2520your%2520post%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-circle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-3.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%25403%2520people%2520followed%2520you%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-circle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252FAssets%252FImages%252Favatar-4.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%2540anonymous%2520liked%2520your%2520post%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E"
+            style="
+              width: 100%;
+              height: 828px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
