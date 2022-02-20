@@ -1,0 +1,36 @@
+/* Rating */
+.rating-component {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  width: max-content;
+}
+.rating-component input {
+  display: none;
+}
+.rating-component label {
+  font-size: 1.2rem;
+  color: var(--grey-color-light);
+  padding: 0.5rem 0.25rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+/* Rating - Hover*/
+.rating-component input:not(:checked) ~ label:hover,
+.rating-component input:not(:checked) ~ label:hover ~ label {
+  color: #fd7;
+}
+/* Rating - Selection */
+.rating-component input:checked ~ label {
+  color: #fd1;
+}
+.rating-component input#rate-5:checked ~ label {
+  color: #ffb400;
+}
+/* Display Output */
+
+.rating-component #display-rating {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: var(--grey-color-dark);
+}
