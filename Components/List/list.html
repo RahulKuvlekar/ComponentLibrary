@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List</title>
-    <link rel="stylesheet" href="/Styles/Documentation.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -13,57 +12,111 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
     <link rel="stylesheet" href="/Styles/Component.css" />
+    <script src="/Documentation/Script/Documentation.js" defer></script>
   </head>
   <body>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div id="doc-burgerMenu" class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="/index.html"> Component Library </a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Documentation/introduction.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fa-solid fa-book"></i>
+                </span>
+                <span class="nav-icon-text"> Documentation </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://github.com/RahulKuvlekar/ComponentLibrary"
+                class="nav-icon-btn"
+                target="_blank"
+              >
+                <span class="nav-icon">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <span class="nav-icon-text"> Github </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="grid-container">
-      <aside class="sidebar grid-item">
+      <aside id="nav-sidebar" class="sidebar grid-item">
         <div>
+          <div class="list-topic">
+            <a href="#"> Get Started </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="/Documentation/introduction.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/Documentation/color.html"> Colors </a>
+            </li>
+            <li>
+              <a href="/Components/Typography/typography.html"> Typography </a>
+            </li>
+            <li class="active">
+              <a href="/Documentation/conclusion.html"> Conclusion </a>
+            </li>
+          </ul>
           <div class="list-topic">
             <a href="#"> Components </a>
           </div>
           <ul class="list-subtopic">
             <li>
-              <a href="../Alert/alert.html"> Alert </a>
+              <a href="/Components/Alert/alert.html"> Alert </a>
             </li>
             <li>
-              <a href="../Avatar/avatar.html"> Avatar </a>
+              <a href="/Components/Avatar/avatar.html"> Avatar </a>
             </li>
             <li>
-              <a href="../Badge/badge.html"> Badge </a>
+              <a href="/Components/Badge/badge.html"> Badge </a>
             </li>
             <li>
-              <a href="../Button/button.html"> Button </a>
+              <a href="/Components/Button/button.html"> Button </a>
             </li>
             <li>
-              <a href="../Card/card.html"> Card </a>
+              <a href="/Components/Card/card.html"> Card </a>
             </li>
             <li>
-              <a href="../Image/image.html"> Image </a>
+              <a href="/Components/Image/image.html"> Image </a>
             </li>
             <li>
-              <a href="../Input/input.html"> Input </a>
+              <a href="/Components/Input/input.html"> Input </a>
             </li>
             <li class="active">
-              <a href="../List/list.html"> List </a>
+              <a href="/Components/List/list.html"> List </a>
             </li>
             <li>
-              <a href="../Modal/modal.html"> Modal </a>
+              <a href="/Components/Modal/modal.html"> Modal </a>
             </li>
             <li>
-              <a href="../Navigation/navigation.html"> Navigation </a>
+              <a href="/Components/Navigation/navigation.html"> Navigation </a>
             </li>
             <li>
-              <a href="../Rating/rating.html"> Rating </a>
+              <a href="/Components/Rating/rating.html"> Rating </a>
             </li>
             <li>
-              <a href="../Grid/grid.html"> Simplified Grid </a>
+              <a href="/Components/Grid/grid.html"> Simplified Grid </a>
             </li>
             <li>
-              <a href="../Typography/typography.html"> Typography </a>
-            </li>
-            <li>
-              <a href="../Toast/toast.html"> Toast </a>
+              <a href="/Components/Toast/toast.html"> Toast </a>
             </li>
           </ul>
         </div>

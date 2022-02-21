@@ -13,58 +13,112 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/Styles/Documentation.css" />
     <link rel="stylesheet" href="/Styles/Component.css" />
-    <script src="./navigation.js" defer></script>
+    <script src="/Documentation/Script/Documentation.js" defer></script>
+    <script src="/Components/Navigation/navigation.js" defer></script>
   </head>
   <body>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div id="doc-burgerMenu" class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="/index.html"> Component Library </a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Documentation/introduction.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fa-solid fa-book"></i>
+                </span>
+                <span class="nav-icon-text"> Documentation </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://github.com/RahulKuvlekar/ComponentLibrary"
+                class="nav-icon-btn"
+                target="_blank"
+              >
+                <span class="nav-icon">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <span class="nav-icon-text"> Github </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="grid-container">
-      <aside class="sidebar grid-item">
+      <aside id="nav-sidebar" class="sidebar grid-item">
         <div>
+          <div class="list-topic">
+            <a href="#"> Get Started </a>
+          </div>
+          <ul class="list-subtopic">
+            <li>
+              <a href="/Documentation/introduction.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/Documentation/color.html"> Colors </a>
+            </li>
+            <li>
+              <a href="/Components/Typography/typography.html"> Typography </a>
+            </li>
+            <li>
+              <a href="/Documentation/conclusion.html"> Conclusion </a>
+            </li>
+          </ul>
           <div class="list-topic">
             <a href="#"> Components </a>
           </div>
           <ul class="list-subtopic">
             <li>
-              <a href="../Alert/alert.html"> Alert </a>
+              <a href="/Components/Alert/alert.html"> Alert </a>
             </li>
             <li>
-              <a href="../Avatar/avatar.html"> Avatar </a>
+              <a href="/Components/Avatar/avatar.html"> Avatar </a>
             </li>
             <li>
-              <a href="../Badge/badge.html"> Badge </a>
+              <a href="/Components/Badge/badge.html"> Badge </a>
             </li>
             <li>
-              <a href="../Button/button.html"> Button </a>
+              <a href="/Components/Button/button.html"> Button </a>
             </li>
             <li>
-              <a href="../Card/card.html"> Card </a>
+              <a href="/Components/Card/card.html"> Card </a>
             </li>
             <li>
-              <a href="../Image/image.html"> Image </a>
+              <a href="/Components/Image/image.html"> Image </a>
             </li>
             <li>
-              <a href="../Input/input.html"> Input </a>
+              <a href="/Components/Input/input.html"> Input </a>
             </li>
             <li>
-              <a href="../List/list.html"> List </a>
+              <a href="/Components/List/list.html"> List </a>
             </li>
             <li>
-              <a href="../Modal/modal.html"> Modal </a>
+              <a href="/Components/Modal/modal.html"> Modal </a>
             </li>
             <li class="active">
-              <a href="../Navigation/navigation.html"> Navigation </a>
+              <a href="/Components/Navigation/navigation.html"> Navigation </a>
             </li>
             <li>
-              <a href="../Rating/rating.html"> Rating </a>
+              <a href="/Components/Rating/rating.html"> Rating </a>
             </li>
             <li>
-              <a href="../Grid/grid.html"> Simplified Grid </a>
+              <a href="/Components/Grid/grid.html"> Simplified Grid </a>
             </li>
             <li>
-              <a href="../Typography/typography.html"> Typography </a>
-            </li>
-            <li>
-              <a href="../Toast/toast.html"> Toast </a>
+              <a href="/Components/Toast/toast.html"> Toast </a>
             </li>
           </ul>
         </div>
@@ -175,7 +229,7 @@
           <iframe
             src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522nav-bar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522nav-bar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Nav%2520Burger%2520Menu%2520Icon%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522burger-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line1%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line2%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line3%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Brand%2520logo%2520goes%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520%253Cdiv%2520class%253D%2522nav-logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%252Findex.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F100%252F100%2522%2520alt%253D%2522Logo%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Brand%2520title%2520goes%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%2523%2522%253E%2520Title%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Navigation%2520links%2520goes%2520here%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-pill%2520nav-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253EBuy%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253ERent%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253ESell%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520search%2520bar%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522search-bar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522search-bar-btn%2522%2520type%253D%2522submit%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%2520%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522search-bar-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Type%2520to%2520search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520section%2520to%2520show%2520button%2520icons%2520and%2520text%2520below%2520it%2520on%2520nav%2520bar%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520"
             style="
-              width: 792px;
+              width: 100%;
               height: 350px;
               border: 0;
               transform: scale(1);
