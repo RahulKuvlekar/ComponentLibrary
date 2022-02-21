@@ -17,39 +17,41 @@ hr {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.main-section::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+body,
+.main-section,
+.sidebar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 .grid-container {
-  width: 80%;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 90vh;
   margin: auto;
   display: grid;
   grid-template-columns: 300px 1fr;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .grid-item {
   /* border: 1px solid black; */
 }
 .sidebar {
+  position: sticky;
+  top: 0;
   overflow-y: scroll;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .main-section {
   padding: 1rem;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.main-section::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .btn {
@@ -155,10 +157,7 @@ body {
   width: 100%;
   position: relative;
 }
-/* .content-example-box a,
-.content-example-box button {
-  padding: 0.5rem !important;
-} */
+
 .content-example-box .demo-modal {
   position: relative;
   top: 0;
@@ -191,4 +190,154 @@ body {
   margin: 1rem auto;
   height: 50vh;
   object-fit: contain;
+}
+.btn-custom {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: pink;
+  color: darkred;
+}
+.btn-custom:hover {
+  background-color: rgb(255, 166, 181);
+}
+.btn-custom:active {
+  border: none;
+  color: white;
+  box-shadow: none;
+}
+
+/* Colors Section */
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.palette > div {
+  width: 120px;
+  height: 120px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.palette-default {
+  background-color: var(--default-color);
+}
+
+.palette .palette-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.palette .palette-secondary {
+  background-color: var(--secondary-color);
+  color: black;
+}
+.palette .palette-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+.palette .palette-success {
+  background-color: var(--success-color);
+  color: white;
+}
+.palette .palette-warning {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.burger-menu {
+  transition: transform 0.3s ease-in;
+}
+
+@media all and (max-width: 1020px) {
+  .grid-container {
+    grid-template-columns: 250px 1fr;
+  }
+}
+
+@media all and (max-width: 786px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: absolute;
+    left: -100%;
+  }
+  .burger-menu.active {
+    transform: rotate(90deg);
+  }
+  .sidebar.active {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    left: 0;
+    transition: left 0.4s ease-in;
+    z-index: 99;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .search-bar {
+    margin: 0 1rem 0 0;
+  }
+
+  .nav-logo-title * {
+    font-size: 1.2rem;
+  }
+
+  .nav-bar .list-inline-item .nav-icon-text {
+    display: inline-block;
+  }
+
+  .nav-bar .nav-icon-btn .nav-icon i {
+    display: block;
+  }
+
+  .nav-pill.nav-menu {
+    box-shadow: none;
+  }
+
+  .nav-pill.nav-btn-icons {
+    display: block !important;
+    /* position: absolute;
+    left: -100%;
+    top: calc(10vh + 152px);
+    width: 100%;
+    flex-flow: column;
+    text-align: center;
+    transition: left 0.3s ease-in;
+    background-color: white;
+    margin: 0 0; */
+  }
+
+  .nav-bar .nav-icon-btn {
+    flex-flow: row wrap;
+    font-weight: 600;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .list-topic {
+    text-align: center;
+  }
+  .list-subtopic li {
+    text-align: center;
+  }
 }
