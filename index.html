@@ -6,20 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
     <link rel="stylesheet" href="Styles/Documentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://component-library-rk.netlify.app/Styles/Component.css"
+    />
+    <link rel="stylesheet" href="/Styles/index.css" />
   </head>
   <body>
-    <a
-      class="btn"
-      style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: x-large;
-      "
-      href="./Components/List/list.html"
-    >
-      Go to Docs
-    </a>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div id="doc-burgerMenu" class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="/index.html"> Component Library </a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Documentation/introduction.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fa-solid fa-book"></i>
+                </span>
+                <span class="nav-icon-text"> Documentation </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://github.com/RahulKuvlekar/ComponentLibrary"
+                class="nav-icon-btn"
+                target="_blank"
+              >
+                <span class="nav-icon">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <span class="nav-icon-text"> Github </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="card-container">
+      <div class="card-content">
+        <h1 class="card-title">
+          COMPONENT LIBRARY <br />
+          Build Your UI Faster
+        </h1>
+        <p class="card-body-text">
+          Copy and paste the components at one click. It is user-friendly and
+          customizable. Spend less time in designing and concentrate more on
+          logic without hustling on UI.
+        </p>
+        <div class="btn-container">
+          <a href="/Documentation/introduction.html" class="btn btn-secondary"
+            >Get Started</a
+          >
+          <a
+            href="https://github.com/RahulKuvlekar/ComponentLibrary"
+            class="btn btn-secondary"
+            >Github</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>

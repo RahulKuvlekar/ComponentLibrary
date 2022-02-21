@@ -1,0 +1,41 @@
+/* Overriding Style - Card */
+.card-container {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card-title,
+.card-body-text {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+.card-title {
+  font-size: 2.5rem;
+}
+.card-body-text {
+  font-size: 1.8rem;
+}
+.card-container .btn-container .btn {
+  width: max-content;
+  margin: 0 1rem;
+}
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btn-secondary {
+  color: var(--primary-color);
+}
+.btn-secondary:active {
+  color: var(--primary-hover);
+}
