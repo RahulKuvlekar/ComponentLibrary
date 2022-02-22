@@ -78,6 +78,8 @@
 - Grid - 3 Column
 - Grid - 4 Column
 
+### [Slider](https://component-library-rk.netlify.app/components/slider/slider)
+
 ### [Toast](https://component-library-rk.netlify.app/components/toast/toast)
 
 ### [Typography](https://binary-ui.netlify.app/docs.html#Text-utilities)
