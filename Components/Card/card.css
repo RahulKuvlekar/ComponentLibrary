@@ -26,17 +26,18 @@
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.3rem;
+  color: var(--grey-color-dark);
 }
 .card-text {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #444444;
+  color: var(--grey-color-medium);
   margin-bottom: 0.3rem;
 }
 /* Card Discription Text */
 .card-body-text {
-  color: #444444;
+  color: var(--grey-color-medium);
   margin-bottom: 0.3rem;
 }
 
@@ -45,7 +46,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
-  /* justify-content: ; */
+  color: var(--grey-color-dark);
 }
 .card-price .price-now {
   font-size: 1.25rem;
@@ -57,7 +58,7 @@
   font-weight: 500;
   text-decoration: line-through;
   padding-right: 5px;
-  color: #888888;
+  color: var(--grey-color-medium);
 }
 .card-price .price-discount {
   font-size: 0.7rem;
@@ -103,23 +104,27 @@
 /* Card Dismiss Button */
 .card-btn-dismiss {
   position: absolute;
-  top: 0.6rem;
+  top: 0;
   right: 0;
   font-weight: 600;
   font-size: 0.8rem;
   padding: 0.3rem 0.6rem;
   background-color: transparent;
   border: none;
-  color: #333333;
+  color: var(--grey-color-dark);
 }
 
 .card-btn-dismiss .btn-icon {
   padding: 0.2rem;
   font-size: 1.3rem;
-  background-color: rgba(255, 255, 255, 0.199);
+  border: 2px solid var(--grey-color-light);
 }
 .card-btn-dismiss .btn-icon:hover {
   color: #111111;
+}
+.card-btn-dismiss .btn-icon:active {
+  color: var(--grey-color-dark);
+  border: 2px solid var(--grey-color-dark);
 }
 
 /* Card Overlay */
