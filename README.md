@@ -85,7 +85,8 @@
 - Grey Text
 - Aligned Text
 <br><br>
-## Component List 
+
+## Tech Stack Use
 - HTML
 - Vanilla CSS
 - Vanilla JavaScript <br><br>
