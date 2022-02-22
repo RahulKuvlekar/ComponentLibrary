@@ -1,4 +1,4 @@
-/* Overriding Style - Card */
+/* Overriding Styles */
 .card-container {
   width: 90%;
   max-width: 600px;
@@ -38,4 +38,29 @@
 }
 .btn-secondary:active {
   color: var(--primary-hover);
+}
+
+.nav-pill.nav-btn-icons {
+  top: 10vh;
+}
+.nav-pill.nav-active {
+  top: 10vh;
+}
+.nav-pill.nav-active li {
+  display: block;
+}
+.burger-menu.nav-active {
+  transform: rotate(90deg);
+  transition: transform 0.5 ease-in;
+}
+
+@media all and (max-width: 786px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media all and (max-width: 540px) {
+  .burger-menu {
+    display: inline-block;
+  }
 }
