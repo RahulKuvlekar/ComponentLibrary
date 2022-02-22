@@ -1,32 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--grey-color-dark);
+}
 .h1 {
   display: block;
   font-size: 2em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 .h2 {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 .h3 {
   display: block;
   font-size: 1.17em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 .h4 {
   display: block;
   font-size: 1em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 .h5 {
   display: block;
   font-size: 0.83em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 .h6 {
   display: block;
   font-size: 0.67em;
   font-weight: bold;
+  color: var(--grey-color-dark);
 }
 
 .text-lg {

@@ -9,6 +9,7 @@
 
 .grid .grid-item {
   padding: 1rem;
+  color: var(--grey-color-dark);
   background-color: #ffffff;
 }
 
