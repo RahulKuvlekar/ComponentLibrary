@@ -164,7 +164,7 @@
         <h1 class="content-title-md">Outline Button</h1>
         <div class="content-definition-md">
           In need of a button, but not the hefty background colors they bring?
-          Replace '.btn-variant' with '.btn-outline-variant'.
+          Replace 'btn-variant' class with 'btn-outline-variant'class.
         </div>
         <div class="content-example-box">
           <button class="btn btn-outline">Default</button>
@@ -281,6 +281,37 @@
             style="
               width: 100%;
               height: 329px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <!-- No Shadow Btn -->
+        <h1 class="content-title-md">Button - No Shadow</h1>
+        <div class="content-definition-md">
+          In need of a button, but not the background Shadow they bring? Add
+          'btn-noShadow' class followed with 'btn'.
+        </div>
+        <div class="content-example-box">
+          <button class="btn btn-primary btn-noShadow">Primary</button>
+          <button class="btn btn-outline-primary btn-noShadow">Primary</button>
+          <button class="btn btn-noShadow">
+            <i class="fas fa-home"></i>
+          </button>
+          <button class="btn btn-primary btn-floating btn-noShadow">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+
+        <div class="code-example-box">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=8px&ph=7px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Added%2520%27btn%27%2520followed%2520by%2520%27btn-noShadow%27%2520class%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-noShadow%2522%253EPrimary%253C%252Fbutton%253E%2520%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520btn-noShadow%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-noShadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-floating%2520btn-noShadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E"
+            style="
+              width: 100%;
+              height: 269px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
