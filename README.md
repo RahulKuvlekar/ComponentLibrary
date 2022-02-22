@@ -1,6 +1,7 @@
 # Component Library 
 > ## [Component Library](https://component-library-rk.netlify.app/) - is used to build faster and attractive UI design.<br>
 <br>
+
 ## How to Use?
 
 - Include CSS file mentioned in [installation guide](https://component-library-rk.netlify.app/documentation/introduction) in your head tag of html file.
@@ -16,7 +17,7 @@
 - You can also create combinations of components by adding appropriate class to your html elements.
 <br><br>
 
-## Component List 
+## Component List -
 
 ### [Alerts](https://component-library-rk.netlify.app/components/alert/alert)
  - Simple Alert
@@ -85,7 +86,8 @@
 - Grey Text
 - Aligned Text
 <br><br>
-## Component List 
+## Tech Stack Used 
 - HTML
 - Vanilla CSS
-- Vanilla JavaScript <br><br>
+- Vanilla JavaScript 
+<br><br>
