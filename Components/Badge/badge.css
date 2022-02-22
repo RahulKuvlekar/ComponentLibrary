@@ -29,18 +29,19 @@
 }
 
 .badge-icon {
+  min-width: 22px;
+  min-height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   font-weight: 700;
   border-radius: 50%;
-  color: white;
-  padding: 0.3rem;
-  top: -1.5rem;
-  right: -1.3rem;
+  padding: 2px;
+  position: absolute;
+  top: -1rem;
+  right: -0.5rem;
+  color: #ffffff;
   background-color: var(--primary-color);
-  margin: 0.5rem;
 }
 .badge-icon-green {
   background-color: var(--success-color);
